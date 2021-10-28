@@ -37,7 +37,7 @@ Next we set the SLO target percentage and time window we are measuring against. 
 
 ![Time Window](assets/time-window.png)
 
-This means that we are setting an SLO to say that `99% of the requests customers make for managing their cart must be successful over the past 7 days`. Set this as the title of your SLO.
+This means that we are setting an SLO to say that `99% of manage cart requests are successful over the past 7 days`{{copy}}. Set this as the title of your SLO.
 
 *Optionally, you can add a description and tag your SLO.* 
 

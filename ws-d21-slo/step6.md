@@ -1,6 +1,6 @@
 # Setting a Burn Rate Alert on our SLO
 
-Error Budget Alerts are getting for keeping a team on the same page for switching priorities to prevent an SLA breach, but what if you want to detect when there is an active issue that is currently depleting your error budget at an elevated rate. Based on the principles from [Chapter 5 of the Google SRE Workbook](https://sre.google/workbook/alerting-on-slos/), you can now set Burn Rate Alerts on Datadog SLOs!
+Error Budget Alerts are great for keeping a team on the same page for when to switch priorities to prevent an SLA breach, but what if you want to detect when there is an active issue that is currently depleting your error budget at an elevated rate? Based on the principles from [Chapter 5 of the Google SRE Workbook](https://sre.google/workbook/alerting-on-slos/), you can now set Burn Rate Alerts on Datadog SLOs!
 
 Unlike Error Budget Alerts, Burn Rate Alerts are intended for active incident response. A Burn Rate Alert is composed of three components:
 
@@ -50,10 +50,8 @@ To do this, go back to the details side panel of your SLO and select the `Set up
 3. Let's keep the long window at its default value of `1h`, the short window is automatically calculated as 1/12 of the long window based on Google's recommendations for Burn Rate Alerts.
 4. Enter a monitor message in the large text box. In a real environment, you could type in `@` and select your name to receive an email notification.
 
-![Placeholder](assets/placeholder.png)
+![Burn Rate Configuration](assets/burn-rate-config.jpeg)
 
 Save the monitor when you're done!
-
-You'll see the new alert appears under the `Alerts` tab in your SLO's side panel. Initially it will be in `NO DATA` since it was just created, before quickly transitioning to `OK` as we haven't introduced any errors yet.
 
 In the next step, we'll purposely inject errors into our systems to see how our SLO and SLO alerts behave.
