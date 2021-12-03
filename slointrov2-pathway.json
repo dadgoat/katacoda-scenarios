@@ -1,0 +1,14 @@
+{
+  "title": "Introduction to SLOs V2",
+  "description": "",
+  "icon": "fa-katacoda",
+  "courses": [
+    {
+      "pathway_id": "dadgoat/slointrov2",
+      "course_id": "slopractice",
+      "id": "slopractice",
+      "title": "SLOs in Practice",
+      "description": "Working with SLOs in Datadog"
+    }
+  ]
+}
